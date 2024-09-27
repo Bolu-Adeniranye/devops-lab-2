@@ -1,4 +1,5 @@
-numbers = input("Enter numbers separated by space: ").split()
-numbers = [float(num) for num in numbers]
-average = sum(numbers) / len(numbers)
-print(f"The average is: {average}")
+# average.py
+numbers = [float(x) for x in input("Enter numbers: ").split()]
+print("Average:", sum(numbers) / len(numbers))
+print("Largest:", max(numbers))
+print("Smallest:", min(numbers))
